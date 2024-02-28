@@ -7,18 +7,62 @@
     </head>
 <body>
     <form action="index.php",method='post'>
+        <div>
         <label for="username">username:</label>
+        
         <input type="text" id="username" minlength="6" maxlength="20" placeholder="fill here user name ">
-        <input type="submit">
+    </div>
         <br>
-        <input type="reset">
+        
+        <div>
+            <label for="email"> email:</label>
+            <input type="text" id="email" placeholder="fakename@email.com">
+        </div>
         <br>
-        <label> email:</label>
-        <input>
-        <br>
-        <label> password:</label>
-        <input>
 
+        <div>
+        <label for="pass"> password:</label>
+            <input type="text" id="pass">
+        </div>
+        <br>
+        <div>
+        <label for="mygender">Gender:</label>
+        <input type="radio" id="mygender" name="mygender">Male
+        <input type="radio" id="mygender" name="mygender">Female
+        <input type="radio" id="mygender" name="mygender">Other
+    
+        </div>
+        <br>
+        <div>
+            <label for="date">Birthday</label>
+                <input type="date" id="date">
+            </div>
+        <br>
+        <div>
+            <label for="check">Are you eligible?</label>
+                <input type="checkbox" id="check">
+            </div>
+            <br>
+            <div>
+                <textarea name="mytext" rows="10" cols="30">write about yourself:</textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="Study">Education</label>
+                    <Select type="text" id="Study">
+                        <option>School</option>
+                        <option>High School</option>
+
+                        <option>Graduation</option>
+
+                        <option>Masters</option>
+
+                    </Select>
+                </div>
+                <br>
+        <div>
+        <input type="reset">
+        </div>
     </form>
 </body>
 
